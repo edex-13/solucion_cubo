@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>CUBO RUBIK</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+
+                <img class="logo" src="src/img/logo.png" alt="cubo rubik">
+                <h2>SOLUCIONA CUBO</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+
+            <section class="cam">
+                <h1 id="title">TOMA LAS FOTOS DEL CUBO</h1>
+                <section class=" containers cam_container" id="cam_container">
+
+                    <video id="webcam" autoplay style="display: none;"></video>
+
+                    <canvas id="canvas" width="300" height="300"></canvas>
+                    <button class="button" id="captureButton">Capturar Foto</button>
+
+                </section>
+                <section class="containers cubo_container" id="cubo_container">
+                    <div class="resultDiv"></div>
+                    <section class="cubo">
+                        <div class="color blanco">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="color rojo">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="color amarillo">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="color naranja">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="color azul">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="color verde">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="color "></div>
+                        <div class="color "></div>
+                        <div class="color "></div>
+                        <div class="color "></div>
+                        <div class="color "></div>
+                        <div class="color "></div>
+                    </section>
+
+                    <button class="button" id="captureButton">CORRECTO</button>
+
+                </section>
+
+
+            </section>
+
+
+            <div class="wrapper">
+
+    </main>
+    <script src="./src/js/video.js"></script>
+    <script src="./src/js/capturaimg.js"></script>
+    <script src="./src/js/paso2.js"></script>
+    <script src="./src/js/api.js"></script>
+
+</body>
+
+</html>
