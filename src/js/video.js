@@ -47,7 +47,7 @@ async function actualizar_canva () {
 
   contador_fotos += 1;
 
-  if (contador_fotos < 5){
+  if (contador_fotos < 6){
     id_animacion = requestAnimationFrame(function () {
       drawSquare();
     });
