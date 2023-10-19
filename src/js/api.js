@@ -6,7 +6,7 @@ function enviar_fotos() {
     formData.append(`images${index + 1}`, image);
   })
   // Realizar la solicitud POST a la API
-  fetch('http://127.0.0.1:5000/subir-imagenes', {
+  fetch('https://apicamrubik-1356ec7d5382.herokuapp.com//subir-imagenes', {
     method: 'POST',
     body: formData,
   })
