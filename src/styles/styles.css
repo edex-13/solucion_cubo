@@ -1,0 +1,67 @@
+@import url('matriz_cubo.css');
+@import url('header.css');
+@import url('main.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(36, 40, 47);
+}
+:root{
+    --fontBase:'Poppins', sans-serif;
+    --headLine1: bold 95px/153.71px var(--fontBase);
+    --headLine3: bold 48px/77px var(--fontBase);
+    --headLine5: normal 17px/39px var(--fontBase);
+    --purple: #310A90;
+
+    --button: bold 14px/22px var(--fontBase);
+
+    
+}
+*{
+    padding: 0;
+    font: var(--headLine5);
+    margin: 0;
+}
+
+h1{
+   font: var(--headLine3);
+}
+
+.wrapper{
+    max-inline-size: 1158px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    margin: auto;
+}
+#webcam {
+    transform: scaleX(-1);
+}
+
+.button{
+    background-color: var(--purple);
+    font-weight: bold;
+    font: var(--button);
+    color: #fff;
+
+    
+
+    padding-inline-start: 24px ;
+    padding-inline-end: 24px ;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border:none;
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background: unset;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+}
